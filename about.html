@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+    #more {display: none;}
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,7 +17,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="logo-title">
-            <a class="navbar-brand" href="mainpage.html"> Театр Флоренцiя </a>
+            <a class="navbar-brand" href="index.html"> Театр Флоренцiя </a>
             <img id="logo" src="https://www.rusdram.com.ua/images/logo.png" alt="logo" class="img-fluid">
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -35,14 +38,12 @@
         </div>
     </nav>
 </header>
-
-<div class="container bg-muted p-4 rounded mt-3">
-        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-
 <div class="container bg-muted">
-        <img id="hall" src="https://mikhailovsky.ru/upload/iblock/a99/7.jpg" alt="hall" class="img-fluid">
+    <img id="hall" src="https://mikhailovsky.ru/upload/iblock/a99/7.jpg" alt="hall" class="img-fluid">
+</div>
+<div class="container bg-muted p-4 rounded mt-3">
+        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat<span id="dots">...</span><span id="more">. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+            <button onclick="readMore()" class="btn btn-secondary text-white" id="myBtn">Читати більше</button>
 </div>
 <br>
 
@@ -78,5 +79,25 @@
       </div>
     </nav>
 </footer>
+
+
+<script>
+function readMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Читати більше"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Читати менше"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
 </body>
 </html>

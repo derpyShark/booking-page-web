@@ -8,100 +8,8 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="index.css">
-    
-    <title>Актори</title>
-    
-    <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-    flex-direction: column;
-    height:100vh;
-    margin: 0;
-    padding: 0;
-}
-
-body{ 
-  display:flex; 
-  flex-direction:column; 
-}
-
-footer{
-  margin-top:auto; 
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(68,63,61); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 70%;
-}
-
-/* The Close Button */
-.close {
-  color: #808080;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #808080;
-  text-decoration: none;
-  cursor: pointer;
-}
-        
-/* The Close Button */
-.close1 {
-  color: #808080;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close1:hover,
-.close1:focus {
-  color: #808080;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* The Close Button */
-.close2 {
-  color: #808080;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close2:hover,
-.close2:focus {
-  color: #808080;
-  text-decoration: none;
-  cursor: pointer;
-}
-        
-</style>
+    <title>Головна</title>
 </head>
-    
 <body style="background-color:rgb(68,63,61)">
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -121,21 +29,23 @@ footer{
 
                 <li class="nav-item">
                     <a class="nav-link" href="plays.html"> Вистави </a>
-                </li>
+                </li>  
             </ul>
         </div>
     </nav>
 </header>
-<div class="container p-4 rounded mt-3">
-  <div class="row">
-    <div class="col-3">
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="name" placeholder="Введіть ім'я" name="actors">
-    </div> 
-  </div>
+
+<div class="container bg-muted p-2 rounded mt-3">
+    <h1 class="text-white text-center">Ласкаво Просимо До Театру Флоренція!</h1>
 </div>
-  
-  
-<div id="actors"></div>
+<div class="container bg-muted col-6">
+        <img id="hall" src="https://34travel.me/media/upload/images/2019/april/teatry-kieva/1-1.jpg" alt="hall" class="img-fluid">
+</div>
+<div class="container bg-muted p-2 rounded mt-3">
+    <h1 class="text-white text-center">Улюблені Вистави</h1>
+</div>
+
+<div id="plays"></div>
 
 <br>
 
@@ -149,8 +59,8 @@ footer{
                     <p class="text-center">Флоренція</p>
                 </div>
                 <div class="col-sm text-white">
-                  <p class="text-center">Наша пошта</p>
-                  <p class="text-center">florence@gmail.com</p>
+                    <p class="text-center">Наша пошта</p>
+                    <p class="text-center">florence@gmail.com</p>
                 </div>
                 <div class="col-sm text-white">
                     <p class="text-center">Телефон</p>
@@ -171,7 +81,8 @@ footer{
       </div>
     </nav>
 </footer>
-<script type="text/javascript" src="actorsFilter.js"></script>
-    
 </body>
+
+<script type="text/javascript" src="playsFilter.js"></script>
+
 </html>
