@@ -9,12 +9,31 @@
 
     <link rel="stylesheet" href="index.css">
     <title>Вистави</title>
+    <style>
+       body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+    flex-direction: column;
+    height:100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+  display:flex; 
+  flex-direction:column; 
+}
+
+footer{
+  margin-top:auto; 
+} 
+    </style>
 </head>
 <body style="background-color:rgb(68,63,61)">
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="logo-title">
-            <a class="navbar-brand" href="mainpage.html"> Театр Флоренцiя </a>
+            <a class="navbar-brand" href="index.html"> Театр Флоренцiя </a>
             <img id="logo" src="https://www.rusdram.com.ua/images/logo.png" alt="logo">
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,67 +50,20 @@
                     <a class="nav-link" href="plays.html"> Вистави </a>
                 </li>  
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" id="search-btn" type="submit">Search</button>
-                </form>
         </div>
     </nav>
 </header>
-<div class="container">
-    <div class="row">
-        <div class="col-3">
-            <div class="container rounded mt-3">
-                <a href="play.html" class="stretched-link"><img src="https://navsi200.com/media/images/1000458-i_009.original.jpg" class="img-fluid"></a>
-            </div>
-        </div>
-        <div class="col-9">
-            <div class="container bg-secondary p-2 rounded mt-3">
-                <h1 class="text-white">Кайдаш Втопився</h1>
-            </div>
-            <div class="container rounded mt-3">
-                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
 
-    </div>
-</div>
-<div class="container">
+<div class="container p-4 rounded mt-3">
     <div class="row">
-        <div class="col-3">
-            <div class="container rounded mt-3">
-                <a href="#" class="stretched-link"><img src="https://cdna.artstation.com/p/assets/images/images/024/203/698/large/jamison-murdock-e5859797-0f92-4043-8568-2889524dbe76.jpg?1581629786" class="img-fluid"></a>
-            </div>
-        </div>
-        <div class="col-9">
-            <div class="container bg-secondary p-2 rounded mt-3">
-                <h1 class="text-white">Муфаса Зірвався</h1>
-            </div>
-            <div class="container rounded mt-3">
-                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
-
+      <div class="col-3">
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="name" placeholder="Введіть назву:" name="plays">
+      </div> 
     </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-3">
-            <div class="container rounded mt-3">
-                <a href="#" class="stretched-link"><img src="https://static.wikia.nocookie.net/irobot/images/7/77/Char_25546.jpg/revision/latest/scale-to-width-down/250?cb=20120107182555" class="img-fluid"></a>
-            </div>
-        </div>
-        <div class="col-9">
-            <div class="container bg-secondary p-2 rounded mt-3">
-                <h1 class="text-white">Він Зламався</h1>
-            </div>
-            <div class="container rounded mt-3">
-                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
-
-    </div>
-</div>
+  </div>
+    
+    
+<div id="plays"></div>
 
 <br>
 
@@ -128,4 +100,7 @@
     </nav>
 </footer>
 </body>
+
+<script type="text/javascript" src="playsFilter.js"></script>
+
 </html>
